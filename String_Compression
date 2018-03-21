@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+int main()
+{
+  
+  char ques[50],ans[50];
+  int count = 1,i=0,j=1;
+  scanf("%s",ques);
+  
+  for( i=0 ; ques[i]!='\0' ; i++)
+  {
+      if(ques[i]==ques[i+1])
+      {
+          count++;
+      }
+      else
+      {
+
+          printf("%c",ques[i]);
+          if(count!=1)
+          {
+                printf("%d",count);
+          }
+          count=1;
+          
+      }
+            
+  }
+ 
+}
