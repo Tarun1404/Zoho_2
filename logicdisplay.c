@@ -7,7 +7,7 @@ int main() {
 
 void logic()
 {
-    int i,j,k,t;
+    int i,j,k,t,temp;
     printf("A B C O/P\n");
     for(i=0;i<=1;i++)
     {
@@ -15,7 +15,8 @@ void logic()
         {
             for(k=0;k<=1;k++)
             {
-                t=i||j||k;
+                temp=j||k;
+                t=i||temp;
                 printf("%d %d %d %d\n",i,j,k,t);
             }
         }
